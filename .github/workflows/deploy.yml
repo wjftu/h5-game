@@ -1,0 +1,32 @@
+name: deploy to server
+on: [workflow_dispatch]
+jobs:
+
+  checkout:
+    name: Checkout
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+
+    - name: 2048
+      uses: actions/checkout@v3
+      with:
+        repository: gabrielecirulli/2048
+        path: 2048
+
+    - name: canvas-tetris
+      uses: actions/checkout@v3
+      with:
+        repository: dionyziz/canvas-tetris
+        path: canvas-tetris
+
+  deploy:
+    - name: copy file via ssh password
+      uses: appleboy/scp-action@master
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        password: ${{ secrets.PASSWORD }}
+        port: ${{ secrets.PORT }}
+        source: "*"
+        target: ${{ secrets.PATH }}
