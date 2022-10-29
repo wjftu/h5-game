@@ -25,3 +25,27 @@ The official app can also be found on the [Play Store](https://play.google.com/s
 https://github.com/dionyziz/canvas-tetris
 
 A very simple HTML5 version of Tetris, for educational purposes, made in 45 minutes.
+
+
+### 3D Hartwig chess set
+
+[**Play**](/3D-Hartwig-chess-set/index.html ':ignore')
+
+https://github.com/juliangarnier/3D-Hartwig-chess-set
+
+3D chess game done in HTML/CSS/JS. Works only in webkit.
+
+
+### circushtml5
+
+[**Play**](/circushtml5/index.html ':ignore')
+
+https://github.com/Gamegur-us/circushtml5
+
+### pacman-canvas
+
+[**Play**](/pacman-canvas/index.htm ':ignore')
+
+https://github.com/platzhersh/pacman-canvas
+
+An old classic, re-written in HTML5

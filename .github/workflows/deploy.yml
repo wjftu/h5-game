@@ -20,6 +20,25 @@ jobs:
         repository: dionyziz/canvas-tetris
         path: canvas-tetris
 
+    - name: 3D Hartwig chess set
+      uses: actions/checkout@v3
+      with:
+        repository: juliangarnier/3D-Hartwig-chess-set
+        path: 3D-Hartwig-chess-set
+
+    - name: circushtml5
+      uses: actions/checkout@v3
+      with:
+        repository: Gamegur-us/circushtml5
+        path: circushtml5
+        ref: gh-pages
+
+    - name: pacman-canvas
+      uses: actions/checkout@v3
+      with:
+        repository: platzhersh/pacman-canvas
+        path: pacman-canvas
+
     - name: copy file via ssh password
       uses: appleboy/scp-action@master
       with:
